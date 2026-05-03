@@ -1,12 +1,13 @@
 import withLayoutBasic from "@/libs/layout/LayoutBasic";
-import { Container, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
+import { NextPage } from "next";
 
-const CommunityPage = () => {
+const CommunityList: NextPage = () => {
   return (
-    <>
-      <Container>Community</Container>
-    </>
+    <div style={{ margin: "20px 0" }}>
+      <Stack className="container">COMMUNITY</Stack>
+    </div>
   );
 };
 
-export default withLayoutBasic(CommunityPage);
+export default withLayoutBasic(CommunityList);
