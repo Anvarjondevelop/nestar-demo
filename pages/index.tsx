@@ -1,28 +1,25 @@
+import Advertisement from "@/libs/homepage/Advertisement";
+import PopularProperties from "@/libs/homepage/PopularProperties";
+import TopAgents from "@/libs/homepage/TopAgents";
+import TopProperties from "@/libs/homepage/TopProperties";
+import TrendProperties from "@/libs/homepage/TrendProperties";
 import withLayoutMain from "@/libs/layout/LayoutHome";
-import { Box, Container, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import { NextPage } from "next";
-import { ST } from "next/dist/shared/lib/utils";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Stack>
-        <Stack flexDirection={"column"}>
-          <Stack>
-            <Stack className="container">Popular properties </Stack>
-          </Stack>
-          <Stack>
-            <Stack className="container">Top Agents </Stack>
-          </Stack>
-          <Stack>
-            <Stack className="container">Top properties </Stack>
-          </Stack>
-          <Stack>
-            <Stack className="container">Top Events </Stack>
-          </Stack>
-        </Stack>
-      </Stack>
-    </>
+    <Stack className={"home-page"}>
+      <TrendProperties />
+      <PopularProperties />
+      <Advertisement />
+      <TopProperties />
+      <TopAgents />
+    </Stack>
   );
 };
+
 export default withLayoutMain(Home);
