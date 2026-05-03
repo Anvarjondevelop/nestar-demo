@@ -1,7 +1,14 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
 
-const withLayoutMain = (Component: React.ComponentType) => {
+import HeaderFilter from "../homepage/HeaderFilter";
+import Top from "../components/Top";
+import Footer from "../components/Footer";
+
+const withLayoutMain = (Component: any) => {
   return (props: any) => {
     return (
       <>
@@ -9,13 +16,22 @@ const withLayoutMain = (Component: React.ComponentType) => {
           <title>Nestar</title>
         </Head>
         <Stack id="pc-wrap">
-          <Stack sx={{ background: "#43a047" }}>Header HOME</Stack>
+          <Stack id={"top"}>
+            <Top />
+          </Stack>
+          <Stack className={"header-main"}>
+            <Stack className={"container"}>
+              <HeaderFilter />
+            </Stack>
+          </Stack>
 
-          <Stack id="main">
+          <Stack id={"main"}>
             <Component {...props} />
           </Stack>
 
-          <Stack sx={{ background: "#df4d18" }}>Footer</Stack>
+          <Stack id={"footer"}>
+            <Footer />
+          </Stack>
         </Stack>
       </>
     );

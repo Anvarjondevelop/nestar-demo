@@ -4,6 +4,7 @@ import { CssBaseline } from "@mui/material";
 import { light } from "../scss/MaterialTheme/index";
 import { useState } from "react";
 import "../scss/app.scss";
+import "../scss/pc/main.scss";
 
 {
   /** NEXTJS Global integrationlar uchun ishlatiladi */
