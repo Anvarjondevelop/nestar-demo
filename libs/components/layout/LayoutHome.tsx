@@ -5,8 +5,8 @@ import Head from "next/head";
 // import "swiper/css/navigation";
 
 import HeaderFilter from "../homepage/HeaderFilter";
-import Top from "../components/Top";
-import Footer from "../components/Footer";
+import Top from "../Top";
+import Footer from "../Footer";
 
 const withLayoutMain = (Component: any) => {
   return (props: any) => {

@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
-import Top from "../components/Top";
-import Footer from "../components/Footer";
+import Top from "../Top";
+import Footer from "../Footer";
 
 const withLayoutBasic = (Component: any) => {
   return (props: any) => {

@@ -1,4 +1,4 @@
-import withLayoutBasic from "@/libs/layout/LayoutBasic";
+import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import { Container, Stack } from "@mui/material";
 
 const PropertyDetailPage = () => {
